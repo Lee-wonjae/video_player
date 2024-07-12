@@ -49,4 +49,28 @@ class _Logo extends StatelessWidget {
 
 class _AppName extends StatelessWidget{
   const _AppName({Key? key}) : super(key : key);
+
+  @override
+  Widget build(BuildContext context){
+    final textStyle = TextStyle(
+      color: Colors.white,
+      fontSize: 30.0,
+      fontWeight: FontWeight.w300,
+    );
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children:[
+        Text(
+          'VIDEO',
+          style: textStyle,
+        ),
+        Text(
+          'Player',
+          style: textStyle.copyWith(
+            fontWeight: FontWeight.w700,
+          )
+        )
+      ]
+    );
+  }
 }
